@@ -1,14 +1,16 @@
 #----------------------------------------------------------------------------------------------
-# Auto-generated from:
-# <http://www.digitaluk.co.uk/coveragechecker/main/tradeexport/CT15 7AQ/NA/0/>
+# Manually created via data from https://ukfree.tv/transmitters/tv/Dover
+# Nicked from https://www.xciv.org/blog/2021/10/28/wrangling-with-tvheadend and used with
+# kind permission of the author.  Forked by RepublicOfJoe on 2024/08/05.
+#
+# Goes in /usr/share/tvheadend/data/dvb-scan/dvb-t
 #----------------------------------------------------------------------------------------------
 # location and provider: UK, Dover
-# date (yyyy-mm-dd)    : 2014-03-25
-#
+# date (yyyy-mm-dd): 2021-10-27
 #----------------------------------------------------------------------------------------------
-[C50 BBC A]
+[C33 PSB1 BBCA DTG-3]
 	DELIVERY_SYSTEM = DVBT
-	FREQUENCY = 706000000
+	FREQUENCY = 570000000
 	BANDWIDTH_HZ = 8000000
 	CODE_RATE_HP = 2/3
 	CODE_RATE_LP = NONE
@@ -18,9 +20,9 @@
 	HIERARCHY = NONE
 	INVERSION = AUTO
 
-[C51 D3&4]
+[C35 PSB2 D3+4 DTG-3]
 	DELIVERY_SYSTEM = DVBT
-	FREQUENCY = 714000000
+	FREQUENCY = 586000000
 	BANDWIDTH_HZ = 8000000
 	CODE_RATE_HP = 2/3
 	CODE_RATE_LP = NONE
@@ -30,9 +32,21 @@
 	HIERARCHY = NONE
 	INVERSION = AUTO
 
-[C55 SDN]
+[C36 PSB3 BBCB DTG-6]
+	DELIVERY_SYSTEM = DVBT2
+	FREQUENCY = 594000000
+	BANDWIDTH_HZ = 8000000
+	CODE_RATE_HP = 2/3
+	CODE_RATE_LP = NONE
+	MODULATION = QAM/256
+	TRANSMISSION_MODE = 32K
+	GUARD_INTERVAL = 1/128
+	HIERARCHY = NONE
+	INVERSION = AUTO
+
+[C39 COM4 SDN DTG-8]
 	DELIVERY_SYSTEM = DVBT
-	FREQUENCY = 746000000
+	FREQUENCY = 618000000
 	BANDWIDTH_HZ = 8000000
 	CODE_RATE_HP = 3/4
 	CODE_RATE_LP = NONE
@@ -42,9 +56,9 @@
 	HIERARCHY = NONE
 	INVERSION = AUTO
 
-[C59 ARQ A]
+[C42 COM5 ARQA DTG-8]
 	DELIVERY_SYSTEM = DVBT
-	FREQUENCY = 778000000
+	FREQUENCY = 642000000
 	BANDWIDTH_HZ = 8000000
 	CODE_RATE_HP = 3/4
 	CODE_RATE_LP = NONE
@@ -54,7 +68,7 @@
 	HIERARCHY = NONE
 	INVERSION = AUTO
 
-[C48 ARQ B]
+[C48 COM6 ARQB DTG-8]
 	DELIVERY_SYSTEM = DVBT
 	FREQUENCY = 690000000
 	BANDWIDTH_HZ = 8000000
@@ -66,16 +80,4 @@
 	HIERARCHY = NONE
 	INVERSION = AUTO
 
-[C53 BBC B HD]
-	DELIVERY_SYSTEM = DVBT2
-	FREQUENCY = 730000000
-	BANDWIDTH_HZ = 8000000
-	CODE_RATE_HP = 2/3
-	CODE_RATE_LP = NONE
-	MODULATION = QAM/256
-	TRANSMISSION_MODE = 32K
-	GUARD_INTERVAL = 1/128
-	HIERARCHY = NONE
-	STREAM_ID = 0
-	INVERSION = AUTO
-
+# end-of-file.
